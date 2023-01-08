@@ -70,9 +70,6 @@ with right_col:
     df_grouped = df[mask].groupby(by='Categoria').sum()[['Precio']]
     bar_chart = px.bar(df_grouped, title='Resumen mensual')
     st.plotly_chart(bar_chart)
-    
-    #worksheet.update_cell(,,)
-
 
 # Connecting with `gspread` here
 
